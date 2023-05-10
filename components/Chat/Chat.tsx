@@ -408,7 +408,14 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                       'Chatbot UI'
                     )}
                   </div>
-
+                  <div className="text-center text-red-500 dark:text-red-500">
+                    服务器昂贵,接口昂贵,但网站免费！！如果你觉得做的好，可以给我买一瓶冰阔落！
+                    每人每月捐个三元、服务就能永久免费下去！
+                  </div>
+                  <div className="flex flex-row justify-center space-x-4 ">
+                    <img src="https://i.328888.xyz/2023/05/10/iQuXYA.jpeg" alt="iQuXYA.jpeg" width="200" height="200" />
+                    <img src="https://i.328888.xyz/2023/05/10/iQuxlo.md.jpeg" alt="iQuxlo.jpeg" width="200" height="200"/>
+                  </div>
                   {models.length > 0 && (
                     <div className="flex h-full flex-col space-y-4 rounded-lg border border-neutral-200 p-4 dark:border-neutral-600">
                       <ModelSelect />
@@ -436,15 +443,8 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
 
                     </div>
                   )}
-                  <div>
-                    服务器昂贵,接口昂贵,但网站免费！！如果你觉得做的好，可以给我买一瓶冰阔落！
-                    每人每月捐个三元、服务就能永久免费下去！
-                  </div>
-
-                  <div className="flex flex-row justify-center space-x-4 ">
-                    <img src="https://i.328888.xyz/2023/05/10/iQuXYA.jpeg" alt="iQuXYA.jpeg" width="400" height="400"/>
-                    <img src="https://i.328888.xyz/2023/05/10/iQuxlo.md.jpeg" alt="iQuxlo.jpeg" width="400" height="400"/>
-                  </div>
+                
+                  
                 </div>
               </>
             ) : (
